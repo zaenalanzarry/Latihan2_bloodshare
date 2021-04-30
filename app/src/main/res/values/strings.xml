@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Latihan2_bloodshare</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="fb">CONNECT WITH FACEBOOK</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="ph_number">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="verify">VERIFY</string>
+    <string name="send">SEND</string>
+    <string name="resend">Resend</string>
+    <string name="retype">Retype Password</string>
+    <string name="personal">Personal</string>
+    <string name="organization">Organization</string>
+    <string name="home">Home Address</string>
+    <string name="location">Default Location</string>
+
+    <string-array name="goldar">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>AB</item>
+        <item>B</item>
+        <item>O</item>
+    </string-array>
+
+    <string-array name="reshus">
+        <item>Reshus</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>Job</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+
+</resources>

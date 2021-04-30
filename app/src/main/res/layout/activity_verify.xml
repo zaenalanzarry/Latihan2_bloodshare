@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".Verify">
+
+    <TextView
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verity Your Account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen36"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen150"
+        />
+
+    <TextView
+        android:id="@+id/txtverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have send verifivation code to your email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen12"
+        android:gravity="center"
+        android:layout_below="@id/verify"
+        android:layout_marginTop="@dimen/dimen8"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtverify"
+        android:layout_marginTop="@dimen/dimen64"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:gravity="center"
+        android:text="enter verification code in here..."
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen36"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btnlogin"
+        android:onClick="PindahToHome"
+        />
+
+    <TextView
+        android:id="@+id/txtres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnsend"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="24dp"
+        android:text="doesn't get the code?"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txtresend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtres"
+        android:layout_toEndOf="@id/txtres"
+        android:layout_below="@id/btnsend"
+        android:layout_marginLeft="@dimen/dimen6"
+        android:layout_marginTop="24dp"
+        android:text="@string/resend"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

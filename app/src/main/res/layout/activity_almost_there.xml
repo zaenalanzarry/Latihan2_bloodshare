@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".AlmostThere">
+
+    <TextView
+        android:id="@+id/almost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Almost There"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen36"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen150"
+        />
+
+    <TextView
+        android:id="@+id/txtalmost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for registering with us. One more \n step, you need to check your email \n to active your account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen12"
+        android:gravity="center"
+        android:layout_below="@id/almost"
+        android:layout_marginTop="@dimen/dimen8"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btnlogin"
+        android:onClick="PindahToVerify"
+        />
+
+</RelativeLayout>

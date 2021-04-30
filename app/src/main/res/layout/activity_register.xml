@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Register">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header"
+        android:outlineAmbientShadowColor="@color/shadow_header"
+        android:outlineSpotShadowColor="@color/shadow_header"
+        >
+
+    <ImageView
+        android:id="@+id/backheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen18"
+        android:layout_marginLeft="@dimen/dimen18"
+        android:src="@drawable/ic_header_back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen24"
+        android:layout_toRightOf="@id/backheader"
+        android:layout_toEndOf="@id/backheader"
+        android:layout_marginTop="@dimen/dimen18"
+        android:layout_marginLeft="@dimen/dimen36"
+        />
+    </Toolbar>
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/username"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/email"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <EditText
+        android:id="@+id/txtph_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/ph_number"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <RadioGroup
+        android:id="@+id/pilihgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtph_number"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="@color/font_desc"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="@color/font_desc"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pilihgender"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginTop="@dimen/dimen18"
+        android:entries="@array/goldar"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pilihgender"
+        android:layout_marginTop="@dimen/dimen18"
+        android:layout_toEndOf="@id/spinner1"
+        android:layout_toRightOf="@id/spinner1"
+        android:entries="@array/reshus" />
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/password"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <EditText
+        android:id="@+id/txtrepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpass"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/retype"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <RadioGroup
+        android:id="@+id/pilihorganisasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtrepass"
+        android:layout_marginTop="@dimen/dimen8"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal"
+            android:textColor="@color/font_desc"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/org"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/organization"
+            android:textColor="@color/font_desc"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pilihorganisasi"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginTop="18dp"
+        android:entries="@array/job" />
+
+    <EditText
+        android:id="@+id/txthome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/home"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <EditText
+        android:id="@+id/txtloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txthome"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:drawableRight="@drawable/ic_loc"
+        android:text="@string/location"
+        android:textColor="@color/font_desc"
+        android:backgroundTint="@color/font_desc"
+        />
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtloc"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:text="Agree with Term and Conditions"
+        android:textColor="@color/font_desc"
+        />
+
+    <Button
+        android:id="@+id/btnregist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb"
+        android:layout_marginTop="@dimen/dimen36"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/register"
+        android:textColor="@color/light_blue"
+        android:background="@drawable/custom_btnregister"
+        android:onClick="PindahToAlmostThere"
+        />
+
+</RelativeLayout>

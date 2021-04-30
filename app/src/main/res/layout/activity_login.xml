@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iclogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen125"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo"
+        />
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iclogo"
+        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername"
+        android:layout_marginTop="@dimen/dimen8"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpassword"
+        android:layout_marginTop="@dimen/dimen24"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btnlogin"
+        />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/or"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dimen18"
+        />
+
+    <Button
+        android:id="@+id/btnfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or"
+        android:layout_marginTop="@dimen/dimen18"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:text="@string/fb"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btnfb"
+        android:drawableLeft="@drawable/ic_fb"
+        />
+
+    <TextView
+        android:id="@+id/txtreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnfb"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="24dp"
+        android:text="doesn't have account?"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txtregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtreg"
+        android:layout_toEndOf="@id/txtreg"
+        android:layout_below="@id/btnfb"
+        android:layout_marginLeft="@dimen/dimen6"
+        android:layout_marginTop="24dp"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:onClick="PindahToRegister"
+        />
+
+</RelativeLayout>
